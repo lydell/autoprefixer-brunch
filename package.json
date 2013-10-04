@@ -1,6 +1,6 @@
 {
   "name": "autoprefixer-brunch",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "author": "Simon Lydell",
   "license": "MIT",
   "description": "Adds autoprefixer support to brunch.",
@@ -14,7 +14,7 @@
     "source map"
   ],
   "scripts": {
-     "prepublish": "rm -rf lib && coffee --bare --output lib/ src/"
+    "prepublish": "rm -rf lib && coffee --bare --output lib/ src/"
   },
   "dependencies": {
     "autoprefixer": "lydell/autoprefixer#source-maps"
