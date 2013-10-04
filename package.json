@@ -1,0 +1,22 @@
+{
+  "name": "autoprefixer-brunch",
+  "version": "1.7.0",
+  "author": "Simon Lydell",
+  "license": "MIT",
+  "description": "Adds autoprefixer support to brunch.",
+  "main": "lib/index.js",
+  "repository": "lydell/autoprefixer-brunch",
+  "homepage": "https://github.com/lydell/autoprefixer-brunch",
+  "bugs": "https://github.com/lydell/autoprefixer-brunch/issues",
+  "keywords": [
+    "brunch",
+    "autoprefixer",
+    "source map"
+  ],
+  "scripts": {
+     "prepublish": "rm -rf lib && coffee --bare --output lib/ src/"
+  },
+  "dependencies": {
+    "autoprefixer": "lydell/autoprefixer#source-maps"
+  }
+}
