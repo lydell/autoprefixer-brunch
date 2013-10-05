@@ -4,7 +4,7 @@ autoprefixer-brunch
 Adds [autoprefixer] support to [brunch].
 
 [autoprefixer]: https://github.com/ai/autoprefixer
-[brunch]: https://brunch.io/
+[brunch]: http://brunch.io/
 
 
 Usage
