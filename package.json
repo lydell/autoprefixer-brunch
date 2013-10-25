@@ -1,6 +1,6 @@
 {
   "name": "autoprefixer-brunch",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "author": "Simon Lydell",
   "license": "MIT",
   "description": "Adds autoprefixer support to brunch.",
