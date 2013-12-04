@@ -4,7 +4,6 @@ module.exports = class AutoprefixerCompiler
 	brunchPlugin: yes
 	type: "stylesheet"
 	extension: "css"
-	pattern: /\.(?:css|scss|sass|less|styl)$/
 
 	constructor: (@config)->
 		{@browsers} = @config.plugins.autoprefixer ? {}
