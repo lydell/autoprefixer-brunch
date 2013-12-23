@@ -10,7 +10,6 @@ module.exports = class AutoprefixerCompiler
 		{@browsers} = @config.plugins.autoprefixer ? {}
 
 	compile: ({data, path, map}, callback)->
-		try compiled = autoprefixer(@browsers...).compile(data, {sourcemap: true, source: path})
+		try result = autoprefixer(@browsers...).process(data, {map: true, from: path})
 		catch error
-		# Try to be compatible with the original version and the fork simultaneously.
-		callback(error, {data: compiled?.code ? compiled, map: compiled?.map})
+		callback(error, {data: result.css, map: result.map})
