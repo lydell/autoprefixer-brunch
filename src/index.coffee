@@ -7,9 +7,10 @@ module.exports = class AutoprefixerCompiler
 	pattern: /\.(?:css|scss|sass|less|styl)$/
 
 	constructor: (@config)->
-		{@browsers} = @config.plugins.autoprefixer ? {}
+		{browsers} = @config.plugins.autoprefixer ? {}
+		@compiler = autoprefixer(browsers...)
 
 	compile: ({data, path, map}, callback)->
-		try result = autoprefixer(@browsers...).process(data, {map: true, from: path})
+		try result = @compiler.process(data, {map: true, from: path})
 		catch error
 		callback(error, {data: result.css, map: result.map})
