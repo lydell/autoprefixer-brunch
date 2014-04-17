@@ -1,3 +1,8 @@
+###
+Copyright 2013-2014 Simon Lydell
+X11 (“MIT”) Licensed. (See LICENSE.)
+###
+
 autoprefixer = require "autoprefixer"
 
 module.exports = class AutoprefixerCompiler
