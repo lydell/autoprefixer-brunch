@@ -10,8 +10,8 @@ Adds [autoprefixer] support to [brunch].
 Usage
 =====
 
-Install it: [how to][usage], [what plugin version to use][version]. `npm install --save
-autoprefixer-brunch` should do the trick.
+Install it: [how to][usage], [what plugin version to use][version]. `npm
+install --save autoprefixer-brunch` should do the trick.
 
 You can specify the browsers you want to target in your project:
 
@@ -30,4 +30,4 @@ exports.config =
 License
 =======
 
-[MIT Licensed](LICENSE).
+[X11 (“MIT”) Licensed](LICENSE).
