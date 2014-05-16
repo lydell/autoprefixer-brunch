@@ -1,6 +1,6 @@
 ###
-Copyright 2013-2014 Simon Lydell
-X11 (“MIT”) Licensed. (See LICENSE.)
+# Copyright 2013-2014 Simon Lydell
+# X11 (“MIT”) Licensed. (See LICENSE.)
 ###
 
 autoprefixer = require "autoprefixer"
@@ -16,6 +16,6 @@ module.exports = class Autoprefixer
     @compiler = autoprefixer(browsers...)
 
   optimize: ({data, path, map}, callback)->
-    try result = @compiler.process(data, {map: true, from: path})
+    try result = @compiler.process(data, {map: true, from: path, mapAnnotation: false})
     catch error
     callback(error, {data: result.css, map: result.map})
