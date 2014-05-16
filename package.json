@@ -10,9 +10,6 @@
     "brunch",
     "autoprefixer"
   ],
-  "scripts": {
-    "prepublish": "rm -f lib/* && coffee -cbo lib/ src/"
-  },
   "dependencies": {
     "autoprefixer": "^1.1"
   }
