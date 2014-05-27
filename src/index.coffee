@@ -5,17 +5,17 @@
 
 autoprefixer = require "autoprefixer"
 
-module.exports = class AutoprefixerCompiler
+module.exports = class Autoprefixer
   brunchPlugin: yes
   type: "stylesheet"
   extension: "css"
-  pattern: /\.(?:css|scss|sass|less|styl)$/
+  defaultEnv: "*"
 
   constructor: (@config)->
     {browsers} = @config.plugins.autoprefixer ? {}
     @compiler = autoprefixer(browsers...)
 
-  compile: ({data, path, map}, callback)->
+  optimize: ({data, path, map}, callback)->
     try result = @compiler.process(data, {map: true, from: path, mapAnnotation: false})
     catch error
     callback(error, {data: result.css, map: result.map})
