@@ -24,8 +24,8 @@ exports.config =
       browsers: ["last 1 version", "> 1%", "ie 8", "ie 7"]
 ```
 
-[usage]: https://github.com/brunch/brunch/blob/master/docs/plugins.md#usage
-[version]: https://github.com/brunch/brunch/blob/master/docs/faq.md#what-version-of-plugin-do-i-need-to-use
+[usage]: https://github.com/brunch/brunch/blob/stable/docs/plugins.md#usage
+[version]: https://github.com/brunch/brunch/blob/stable/docs/faq.md#what-version-of-each-plugin-do-i-need-to-use
 
 
 License
