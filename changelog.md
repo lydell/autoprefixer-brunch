@@ -1,3 +1,8 @@
+### Version 1.8.1 (2014-06-19) ###
+
+- Fixed: The source map generation was broken.
+
+
 ### Version 1.8.0 (2014-05-27) ###
 
 - Improved: Works regardless of which CSS preprocessor you might have used. As
