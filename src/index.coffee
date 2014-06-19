@@ -16,6 +16,6 @@ module.exports = class Autoprefixer
     @compiler = autoprefixer(browsers...)
 
   optimize: ({data, path, map}, callback)->
-    try result = @compiler.process(data, {map: true, from: path, mapAnnotation: false})
+    try result = @compiler.process(data, {map, from: path, to: path, mapAnnotation: false})
     catch error
     callback(error, {data: result.css, map: result.map})
