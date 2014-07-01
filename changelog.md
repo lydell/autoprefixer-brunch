@@ -1,3 +1,10 @@
+### Version 1.8.2 (2014-07-01) ###
+
+- Improved: Updated to autoprefixer 2.1+.
+- Fixed: Errors are now reported correctly.
+- Added: You may now pass options to autoprefixer.
+
+
 ### Version 1.8.1 (2014-06-19) ###
 
 - Fixed: The source map generation was broken.
