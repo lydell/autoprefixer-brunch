@@ -12,10 +12,19 @@ module.exports = class Autoprefixer
   defaultEnv: "*"
 
   constructor: (@config)->
-    {browsers} = @config.plugins.autoprefixer ? {}
-    @compiler = autoprefixer(browsers...)
+    {browsers, options} = @config.plugins.autoprefixer ? {}
+    @compiler = autoprefixer(browsers, options)
 
   optimize: ({data, path, map}, callback)->
-    try result = @compiler.process(data, {map, from: path, to: path, mapAnnotation: false})
+    try
+      result = @compiler.process(data,
+        from: path, to: path
+        map:
+          prev: map.toJSON()
+          annotation: false
+      )
+
     catch error
-    callback(error, {data: result.css, map: result.map})
+      return callback error
+
+    callback null, {data: result.css, map: result.map.toJSON()}
