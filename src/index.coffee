@@ -3,7 +3,7 @@
 # X11 (“MIT”) Licensed. (See LICENSE.)
 ###
 
-autoprefixer = require "autoprefixer"
+autoprefixer = require "autoprefixer-core"
 
 module.exports = class Autoprefixer
   brunchPlugin: yes
@@ -12,8 +12,17 @@ module.exports = class Autoprefixer
   defaultEnv: "*"
 
   constructor: (@config)->
-    {browsers, options} = @config.plugins.autoprefixer ? {}
-    @compiler = autoprefixer(browsers, options)
+    options = @config.plugins.autoprefixer ? {}
+
+    if "options" of options
+      console.warn "`config.plugins.autoprefixer.options` is deprecated. Put
+        the options directly in `config.plugins.autoprefixer` instead"
+      oldOptions = options.options
+      options = {browsers: options.browsers}
+      for own key, value of oldOptions
+        options[key] = value
+
+    @compiler = autoprefixer(options)
 
   optimize: ({data, path, map}, callback)->
     try

@@ -11,6 +11,6 @@
     "autoprefixer"
   ],
   "dependencies": {
-    "autoprefixer": "^2.1"
+    "autoprefixer-core": "^3.0.0"
   }
 }
