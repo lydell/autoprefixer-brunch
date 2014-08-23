@@ -1,4 +1,4 @@
-### Version 1.8.3 (Unreleased) ###
+### Version 1.8.3 (2014-08-23) ###
 
 - Changed: `autoprefixer-core` is now used instead of `autoprefixer`.
 - Changed: `config.plugins.autoprefixer` is now simply passed directly to
