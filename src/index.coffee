@@ -31,6 +31,7 @@ module.exports = class Autoprefixer
         map:
           prev: map.toJSON()
           annotation: false
+          sourcesContent: false
       )
 
     catch error
