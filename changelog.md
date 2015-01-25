@@ -1,3 +1,8 @@
+### Version 1.8.4 (2015-01-25) ###
+
+- Improved: Upgraded to autoprefixer 5.0.
+
+
 ### Version 1.8.3 (2014-08-23) ###
 
 - Changed: `autoprefixer-core` is now used instead of `autoprefixer`.

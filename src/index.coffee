@@ -1,5 +1,5 @@
 ###
-# Copyright 2013-2014 Simon Lydell
+# Copyright 2013, 2014, 2015 Simon Lydell
 # X11 (“MIT”) Licensed. (See LICENSE.)
 ###
 
