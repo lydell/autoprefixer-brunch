@@ -3,7 +3,11 @@ autoprefixer-brunch
 
 Adds [autoprefixer] support to [brunch].
 
+**Deprecated.** Please use [postcss-brunch] instead. It lets you run any postcss
+plugins, and includes an example on how to use autoprefixer.
+
 [autoprefixer]: https://github.com/postcss/autoprefixer
+[postcss-brunch]: https://github.com/iamvdo/postcss-brunch/
 [brunch]: http://brunch.io/
 
 
